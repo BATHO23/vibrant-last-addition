@@ -15,7 +15,7 @@ function displayDateTime() {
     });
     const dateTimeString = `${dayOfWeek} ${time}`;
     document.getElementById("date-time").textContent = dateTimeString;
-  }
+  }function convertToFahrenheit
 function convertToFahrenheit(celsius) {
     return (celsius * 9) / 5 + 32;
   }
@@ -35,3 +35,12 @@ function convertToFahrenheit(celsius) {
     }
   });
   
+document
+.getElementById("city-search-form")
+.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const cityInput = document.getElementById("city-input").value;
+  document.getElementById("city-result").textContent = `City: ${cityInput}`;
+});
+
+displayDateTime();
