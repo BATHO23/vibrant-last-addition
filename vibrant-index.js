@@ -16,3 +16,22 @@ function displayDateTime() {
     const dateTimeString = `${dayOfWeek} ${time}`;
     document.getElementById("date-time").textContent = dateTimeString;
   }
+function convertToFahrenheit(celsius) {
+    return (celsius * 9) / 5 + 32;
+  }
+  
+  document.getElementById("convert-link").addEventListener("click", function (e) {
+    e.preventDefault();
+    const tempCelsius = parseFloat(
+      document.getElementById("temp-celsius").textContent
+    );
+    if (e.target.textContent === "Convert to Fahrenheit") {
+      const tempFahrenheit = convertToFahrenheit(tempCelsius);
+      document.getElementById("temp-celsius").textContent = tempFahrenheit;
+      e.target.textContent = "Convert to Celsius";
+    } else {
+      document.getElementById("temp-celsius").textContent = 17;
+      e.target.textContent = "Convert to Fahrenheit";
+    }
+  });
+  
