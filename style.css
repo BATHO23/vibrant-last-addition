@@ -1,0 +1,75 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Added border-radius for the container */
+    background-color: black;
+  }
+  
+  h1 {
+    color: #333;
+    font-family: Georgia, "Times New Roman", Times, italic, serif;
+  }
+  
+  h2 {
+    color: #666;
+  }
+  
+  #city-search-form {
+    margin: 10px 0;
+  }
+  
+  #city-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Added border-radius for the search bar */
+  }
+  
+  #city-input::placeholder {
+    color: #999;
+  }
+  
+  #city-result {
+    font-size: 18px;
+    color: darkgray;
+  }
+  
+  .temperature {
+    font-size: 20px;
+    color: blue;
+  }
+  
+  #convert-link {
+    color: #0a2030;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #0a2030;
+    padding: 5px 10px;
+    border-radius: 10px; /* Added border-radius for the button */
+  }
+  
+  #convert-link:hover {
+    text-decoration: underline;
+  }
+  .button {
+    width: 44px;
+    margin: 0.8em;
+    border-width: 20px;
+    border: none;
+    border-radius: 10px:
+    border: radius bottom 10px;
+    height: 46px;
+    background: #7c7c7c2b;
+    cursor: pointer;
+    transition: 0.25s  ease-in-out;
+  }
+  .button :hover {
+    background-color:lightgray
+  }
