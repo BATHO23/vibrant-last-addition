@@ -2,7 +2,7 @@ function displayDateTime() {
     const now = new Date();
     const dayOfWeek = [
       "Sunday",
-      "Monday",f
+      "Monday",
       "Tuesday",
       "Wednesday",
       "Thursday",
@@ -15,7 +15,7 @@ function displayDateTime() {
     });
     const dateTimeString = `${dayOfWeek} ${time}`;
     document.getElementById("date-time").textContent = dateTimeString;
-  }function convertToFahrenheit
+  }
 function convertToFahrenheit(celsius) {
     return (celsius * 9) / 5 + 32;
   }
@@ -33,8 +33,7 @@ function convertToFahrenheit(celsius) {
       document.getElementById("temp-celsius").textContent = 17;
       e.target.textContent = "Convert to Fahrenheit";
     }
-  });
-  
+  });  
 document
 .getElementById("city-search-form")
 .addEventListener("submit", function (e) {
